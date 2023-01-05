@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+body{
+    background-color: #222;
+    font-family: system-ui;
+    counter-reset: try;
+}
+.head{
+    text-align: center;
+    color: white;
+    margin: 5px 0;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: #111;
+    padding: 5px;
+    margin: 2px 0;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-size: 12px;
+}
+input::placeholder{
+    padding-left: 7px;
+}
+input:focus{
+    transform: scale(1.02);
+    background-color: black;
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+button{
+    width: 100%;
+    border: none;
+    background-color: #85006e;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 12px;
+}
+button:hover{
+    background-color: #ca0dab;
+    transform: scale(1.05);
+    letter-spacing: 1px;
+}
+
+.price{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: white;
+}
+
+.price input{
+    width: 20%;
+}
+small{
+    width: fit-content;
+    background-color: rgb(156, 23, 23);
+    padding: 3px;    
+    border-radius: 4px;
+}
+small::before{
+    content: 'Totla :';
+
+    margin-right: 4px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btnsearch button{
+    width: 49%;
+}
+
+table{
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: center;
+}
+td button{
+    width: 70%;
+}
+td button:hover{
+    transform: scale(1);
+    width: 70%; 
+    letter-spacing: 0;
+}
+.num::before{
+    counter-increment: try;
+    content: counter(try);
+}
+th,td{
+    text-transform: uppercase;
+    text-align: center;
+}
